@@ -31,12 +31,13 @@ rpy2 3.4.2
 
 R 4.0.3  
 BiocManager 3.12  
-motifbreakR  ??  
-BSgenome.Hsapiens.UCSC.hg38 ??  
+motifbreakR  2.4  
+BSgenome.Hsapiens.UCSC.hg38 1.4.3
+MotifDb 1.32
 
-ANNOVAR (https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  
-bedtools  
-GATK  
+ANNOVAR (https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  ??  
+bedtools  ??  
+GATK 4.1.9.0 ()  
 
 
 
