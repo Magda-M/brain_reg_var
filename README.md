@@ -19,18 +19,27 @@ Files describing active promoter and enhacer regions are in data folder (brain_p
 3. other TF motifs database (any motifs collection available in the MotifDb R package)
 
 # Requirements and installation
-The jupyter notebook itself does not require any installation but to run it the following packages/libraries/tools are required:
-python > 3.5   
+The notebook has been developed and tested in the following environment:
+Ubuntu 20.04
+Python 3.8.5 
+jupyterlab 3.0.7  
+pandas 1.2.1  
+scipy 1.6.0 
+statsmodels 0.12.2 
+pybedtools 0.8.1 
+rpy2 3.4.2
+
+R 4.0.3  
+BiocManager 3.12  
+motifbreakR  ??  
+BSgenome.Hsapiens.UCSC.hg38 ??  
+
 ANNOVAR (https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  
-`<annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad_genome humandb/>` (run this command afted ANNOVAR download)  
 bedtools  
-`<sudo apt install bedtools>`  
-python libraries: jupyterlab, pandas, scipy, statsmodels, pybedtools, rpy2  
-`<pip3 install jupyterlab pandas scipy statsmodels pybedtools rpy2>` 
-R 4.*
-BiocManager 3.12
-motifbreakR
-BSgenome.Hsapiens.UCSC.hg38
+GATK  
+
+
+
 
 A virtual disk image (.vdi) file with Ubuntu 20.04, all requirements and this notebook ready to use is available at: link.
 
