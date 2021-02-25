@@ -27,20 +27,20 @@ For SNPs located in promoters the assignment of putative target genes is relativ
 
 ## Requirements and installation
 The notebook has been developed and tested in the following environment:
-Ubuntu 20.04
-Python 3.8.5 
-*jupyterlab 3.0.7  
-*pandas 1.2.1  
-*scipy 1.6.0 
-*statsmodels 0.12.2 
-*pybedtools 0.8.1 
-*rpy2 3.4.2
+Ubuntu 20.04  
+Python 3.8.5  
+* jupyterlab 3.0.7  
+* pandas 1.2.1  
+* scipy 1.6.0 
+* statsmodels 0.12.2 
+* pybedtools 0.8.1 
+* rpy2 3.4.2
 
 R 4.0.3  
-*BiocManager 3.12  
-*motifbreakR  2.4  
-*BSgenome.Hsapiens.UCSC.hg38 1.4.3
-*MotifDb 1.32
+* BiocManager 3.12  
+* motifbreakR  2.4  
+* BSgenome.Hsapiens.UCSC.hg38 1.4.3
+* MotifDb 1.32
 
 [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  ??  
 bedtools  ??  
