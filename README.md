@@ -26,8 +26,10 @@ For SNPs located in promoters the assignment of putative target genes is relativ
 4. methods and thresholds for motif scanning.
 
 ## Requirements and installation
-The notebook has been developed and tested in the following environment:
-Ubuntu 20.04  
+The notebook has been developed and tested in the following environment:  
+  
+Ubuntu 20.04   
+  
 Python 3.8.5  
 * jupyterlab 3.0.7  
 * pandas 1.2.1  
