@@ -4,10 +4,19 @@ A jupyter notebook which can be used to identify and characterize SNPs with regu
 **Output:** biallelic SNPs located in regulatory regions active in human brain, annotated with putative target genes and predicted affected transcription factor binding sites.  
 
 The contents of the notebook can be previewed in the pdf file (annotate_brain_regulatory_variants.pdf).
+
+## How to run the analysis:
+Download or clone this repository:  
+`git clone https://github.com/Magda-M/brain_reg_var.git`  
+Move to the tool folder and run jupyter:  
+`cd brain_reg_var`  
+`jupyter lab`  
+Jupyter lab should open automatically in you web browser. Now provide paths to the input files and 3rd party software by typing approproate values in the second code cell of the notebook. You can also keep the default paths if you wish and of course if you place your input accordingly.  
+In the Jupyter lab menu go to the "Run" tab and click the "Run All Cells" option. The time of the calculations depends highly on the size of your input VCF. For ~250 thousand variants the computation time on a laptop was around 1 hour.  
  
 ## Main steps of the analysis performed within the notebook:
 ### 1. Selection of biallelic SNPs located in regulatory regions active in human brain.
-In the first step of the analysis biallelic SNPs located in promoters and non-promoter regulatory regions active in human brain are selected. Files describing active promoter and non-promoter regulatory regions are stored in the `<data>` folder (brain_promoters_active.bed and brain_enhancers_active.bed). These are "common active promoters" and "common putative enhancers" identified by [Stepniak et al](https://www.biorxiv.org/content/10.1101/867861v2). You can replace them by your custom files if you wish (you can read more about customization options in the ["How the analysis can be customized"](#how-the-analysis-can-be-customized) section).
+In the first step of the analysis biallelic SNPs located in promoters and non-promoter regulatory regions active in human brain are selected. Files describing active promoter and non-promoter regulatory regions are stored in the `data` folder (brain_promoters_active.bed and brain_enhancers_active.bed). These are "common active promoters" and "common putative enhancers" identified by [Stepniak et al](https://www.biorxiv.org/content/10.1101/867861v2). You can replace them by your custom files if you wish (you can read more about customization options in the ["How the analysis can be customized"](#how-the-analysis-can-be-customized) section).
 ### 2. Annotation with population frequencies based on gnomAD genome database data using the ANNOVAR tool.  
 In the second step [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/) tool is run on the selected SNPs located in promoters and non-promoter regulatory regions to annotate them with population frequencies obtained from the [gnomAD genome database](https://gnomad.broadinstitute.org/). 
 ### 3. Selection of rare SNPs enriched in the analyzed group of samples compared to the population. 
@@ -20,10 +29,9 @@ For SNPs located in promoters the assignment of putative target genes is relativ
 * chromatin contacts inferred from Hi-C data (we used Hi-C data from developing human brain from [Won et al., 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5358922/) interpreted using the [HiCEnterprise software](https://peerj.com/preprints/27753/)),
 * correlation between non-promoter regulatory region activity and gene expression level (we used coverage from H3K27ac ChIP-seq experiments from [Stepniak et al](https://www.biorxiv.org/content/10.1101/867861v2) as measure of regulatory regions activity and RNA-seq data from the same work).
 ## How the analysis can be customized:
-1. different regulatory regions (but experimental results which can quantitatively describe activity of these regulatory regions, such as coverage from appropriate ChIP-seq experiments or open-chromatin detecting assays, have to be provided as well)
-2. different reference population (can be chosen from populations available in gnomAD genome)
-3. other TF motifs database (any motifs collection available in the MotifDb R package)
-4. methods and thresholds for motif scanning.
+1. You can provide different set of active regulatory regions by replacing brain_promoters_active.bed and brain_enhancers_active.bed files in the data folder. However, for putative active enhancers you will also need to provide file with activity readout for each enhancer by replacing the h3k27ac_coverage_quantile_normalized.csv file (e.g. coverage from appropriate ChIP-seq experiments or open-chromatin detecting assays), file with gene expression data (transcrtpts_rnaseq_quantile_normalized.csv) and predicted chromatin contacts (predicted_contacts.bed).
+2. You can choose any population from gnomAD genome database for the selection of SNPs enriched in your group of samples.
+3. You can modify TF motifs database (to any motifs collection available in the MotifDb R package), method and thresholds for motif scanning step.
 
 ## Requirements and installation
 The notebook has been developed and tested in the following environment:  
