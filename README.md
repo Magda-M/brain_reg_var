@@ -53,8 +53,8 @@ R 4.0.3
 * MotifDb 1.32
 
 [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  ??  
-bedtools  ??  
-GATK 4.1.9.0 ()  
+bedtools  2.27.1  
+GATK [4.1.9.0](https://github.com/broadinstitute/gatk/releases/download/4.1.9.0/gatk-4.1.9.0.zip)  
 
 
 
