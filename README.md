@@ -7,12 +7,16 @@ The contents of the notebook can be previewed in the pdf file (annotate_brain_re
 
 ## How to run the analysis:
 Download or clone this repository:  
-`git clone https://github.com/Magda-M/brain_reg_var.git`  
+```
+git clone https://github.com/Magda-M/brain_reg_var.git
+```  
 Move to the tool folder and run jupyter:  
-`cd brain_reg_var`  
-`jupyter lab`  
+```
+cd brain_reg_var  
+jupyter lab
+```  
 Jupyter lab should open automatically in you web browser. Now provide paths to the input files and 3rd party software by typing approproate values in the second code cell of the notebook. You can also keep the default paths if you wish and of course if you place your input accordingly.  
-In the Jupyter lab menu go to the "Run" tab and click the "Run All Cells" option. The time of the calculations depends highly on the size of your input VCF. For ~250 thousand variants the computation time on a laptop was around 1 hour.  
+In the Jupyter lab menu go to the "Run" tab and click the "Run All Cells" option. The time of the calculations depends highly on the size of your input VCF. For ~250 thousand variants the computation time on a laptop was around 1 hour.  You can also execute cells one-by-one and inspect intermediate results.
  
 ## Main steps of the analysis performed within the notebook:
 ### 1. Selection of biallelic SNPs located in regulatory regions active in human brain.
