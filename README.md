@@ -32,6 +32,8 @@ For SNPs located in promoters the assignment of putative target genes is relativ
 * distance between the regulatory region and TSS (by identification of the closest TSS),
 * chromatin contacts inferred from Hi-C data (we used Hi-C data from developing human brain from [Won et al., 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5358922/) interpreted using the [HiCEnterprise software](https://peerj.com/preprints/27753/)),
 * correlation between non-promoter regulatory region activity and gene expression level (we used coverage from H3K27ac ChIP-seq experiments from [Stepniak et al](https://www.biorxiv.org/content/10.1101/867861v2) as measure of regulatory regions activity and RNA-seq data from the same work).
+### 6. Expression of target genes in brain tissue.
+In the last step median gene-level TPM by tissue data obtained from GTEx (GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm) are used to estimate expression of putative target genes in human brain.
 ## How the analysis can be customized:
 1. You can provide different set of active regulatory regions by replacing brain_promoters_active.bed and brain_enhancers_active.bed files in the data folder. However, for putative active enhancers you will also need to provide file with activity readout for each enhancer by replacing the h3k27ac_coverage_quantile_normalized.csv file (e.g. coverage from appropriate ChIP-seq experiments or open-chromatin detecting assays), file with gene expression data (transcrtpts_rnaseq_quantile_normalized.csv) and predicted chromatin contacts (predicted_contacts.bed).
 2. You can choose any population from gnomAD genome database for the selection of SNPs enriched in your group of samples.
