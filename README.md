@@ -58,13 +58,13 @@ R 4.0.3
 * BSgenome.Hsapiens.UCSC.hg38 1.4.3
 * MotifDb 1.32
 
-[ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database  ??  
+[ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/) with gnomad_genome database.
 bedtools  2.27.1  
 GATK [4.1.9.0](https://github.com/broadinstitute/gatk/releases/download/4.1.9.0/gatk-4.1.9.0.zip)  
 
 
 
 
-A virtual disk image (.vdi) file with Ubuntu 20.04, all requirements and this notebook ready to use is available at: link.
+A virtual disk image (.vdi) file with Ubuntu 20.04, all requirements and this notebook ready to use is available at: http://swiatowid.mimuw.edu.pl/~magda/brain_regulatory_variants.zip.
 
 
