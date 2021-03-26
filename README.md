@@ -68,3 +68,4 @@ GATK [4.1.9.0](https://github.com/broadinstitute/gatk/releases/download/4.1.9.0/
 A virtual disk image (.vdi) file with Ubuntu 20.04, all requirements and this notebook ready to use is available at: http://swiatowid.mimuw.edu.pl/~magda/brain_regulatory_variants.zip.
 
 
+<sub>These results have been obtained within the “Identification of regulatory non-coding variants associated with neurodegenerative disorders based on targeted sequencing of open chromatin regions” project funded by the Foundation for Polish Science (within the POWROTY/REINTEGRATION programme co-financed by the European Union under the European Regional Development Fund, POIR.04.04.00-00-3E86/17-00).</sub>
